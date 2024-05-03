@@ -10,7 +10,32 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			let n = arr.length;
+
+			if(n == 0 || n == 1) return -Infinity;
 			
+			let maxFirst = -100000;
+			let maxSec = -100000;
+			
+			for(let i = 0; i < n; i++){
+				
+				if(arr[i] > maxFirst){
+					maxFirst = arr[i];
+				}
+				else{
+					if(arr[i] > maxSec){
+						maxSec = arr[i];
+					}
+				}
+			}
+			
+			
+			if(maxSec == maxfirst){
+				return -Infinity;
+			}
+			else{
+				return maxSec;
+			}
 		}
 
 		function Main() {
@@ -29,4 +54,5 @@
 
 </body>
 
+	
 </html>
