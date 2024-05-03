@@ -14,8 +14,8 @@
 
 			if(n == 0 || n == 1) return -Infinity;
 			
-			let maxFirst = -100000;
-			let maxSec = -100000;
+			var maxFirst = -100000;
+			var maxSec = -100000;
 			
 			for(let i = 0; i < n; i++){
 				
@@ -30,12 +30,13 @@
 			}
 			
 			
-			if(maxSec == maxfirst){
+			if(maxSec === maxFirst){
 				return -Infinity;
 			}
-			else{
-				return maxSec;
-			}
+			
+			return maxSec;
+			
+			
 		}
 
 		function Main() {
@@ -54,5 +55,7 @@
 
 </body>
 
+
+	
 	
 </html>
